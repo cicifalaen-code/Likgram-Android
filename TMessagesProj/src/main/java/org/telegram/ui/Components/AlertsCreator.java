@@ -728,7 +728,7 @@ public class AlertsCreator {
             return null;
         }
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle(LocaleController.getString(R.string.AppName));
+        builder.setTitle("Likgram");
         builder.setMessage(text);
         builder.setPositiveButton(LocaleController.getString(R.string.OK), null);
         if (updateApp) {
@@ -888,7 +888,7 @@ public class AlertsCreator {
             return null;
         }
         AlertDialog.Builder builder = new AlertDialog.Builder(context, resourcesProvider);
-        builder.setTitle(title == null ? LocaleController.getString(R.string.AppName) : title);
+        builder.setTitle(title == null ? "Likgram" : title);
         builder.setMessage(text);
         if (positiveButton == null) {
             builder.setPositiveButton(LocaleController.getString(R.string.OK), null);
@@ -923,7 +923,7 @@ public class AlertsCreator {
         final AlertDialog[] dialog = new AlertDialog[1];
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(context, resourcesProvider);
-        builder.setTitle(title == null ? LocaleController.getString(R.string.AppName) : title);
+        builder.setTitle(title == null ? "Likgram" : title);
         builder.setMessage(info);
 
         ThemedCursorEditText editText = new ThemedCursorEditText(context);
@@ -6769,7 +6769,7 @@ public class AlertsCreator {
         }
 
         AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getParentActivity());
-        builder.setTitle(LocaleController.getString(R.string.AppName));
+        builder.setTitle("Likgram");
         builder.setMessage(LocaleController.formatString("FloodWaitTime", R.string.FloodWaitTime, timeString));
         builder.setPositiveButton(LocaleController.getString(R.string.OK), null);
         fragment.showDialog(builder.create(), true, null);
@@ -6836,7 +6836,7 @@ public class AlertsCreator {
             return;
         }
         AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getParentActivity());
-        builder.setTitle(LocaleController.getString(R.string.AppName));
+        builder.setTitle("Likgram");
         switch (error.text) {
             case "PEER_FLOOD":
                 builder.setMessage(LocaleController.getString(R.string.NobodyLikesSpam2));

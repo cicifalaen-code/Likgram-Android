@@ -3755,7 +3755,7 @@ public class PeerStoriesView extends SizeNotifierFrameLayout implements Notifica
 
     private void showDownloadAlert() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), resourcesProvider);
-        builder.setTitle(getString(R.string.AppName));
+        builder.setTitle("Likgram");
         builder.setPositiveButton(getString(R.string.OK), null);
         //  boolean alreadyDownloading = currentMessageObject != null && currentMessageObject.isVideo() && FileLoader.getInstance(currentMessageObject.currentAccount).isLoadingFile(currentFileNames[0]);
 //        if (alreadyDownloading) {

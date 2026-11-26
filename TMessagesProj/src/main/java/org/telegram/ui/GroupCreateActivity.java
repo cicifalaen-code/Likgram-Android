@@ -579,7 +579,7 @@ public class GroupCreateActivity extends BaseFragment implements NotificationCen
                     }
                     if (chatType == ChatObject.CHAT_TYPE_CHAT && selectedContacts.size() == getMessagesController().maxGroupCount) {
                         AlertDialog.Builder builder = new AlertDialog.Builder(getParentActivity());
-                        builder.setTitle(getString(R.string.AppName));
+                        builder.setTitle("Likgram");
                         builder.setMessage(getString(R.string.SoftUserLimitAlert));
                         builder.setPositiveButton(getString(R.string.OK), null);
                         showDialog(builder.create());

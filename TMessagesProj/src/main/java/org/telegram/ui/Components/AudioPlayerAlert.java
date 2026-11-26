@@ -3066,7 +3066,7 @@ public class AudioPlayerAlert extends BottomSheet implements NotificationCenter.
                 parentActivity.startActivityForResult(Intent.createChooser(intent, LocaleController.getString(R.string.ShareFile)), 500);
             } else {
                 AlertDialog.Builder builder = new AlertDialog.Builder(parentActivity);
-                builder.setTitle(LocaleController.getString(R.string.AppName));
+                builder.setTitle("Likgram");
                 builder.setPositiveButton(LocaleController.getString(R.string.OK), null);
                 builder.setMessage(LocaleController.getString(R.string.PleaseDownload));
                 builder.show();

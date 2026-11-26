@@ -334,7 +334,7 @@ public class DialogStoriesCell extends FrameLayout implements NotificationCenter
         addView(titleView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT));
 
         telegramLogoView = new ImageView(context);
-        telegramLogoView.setContentDescription(getString(R.string.AppName));
+        telegramLogoView.setContentDescription("Likgram");
         telegramLogoView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         telegramLogoView.setImageResource(R.drawable.telegram_logo_2);
         telegramLogoView.setColorFilter(getTextLogoColor(), PorterDuff.Mode.MULTIPLY);
