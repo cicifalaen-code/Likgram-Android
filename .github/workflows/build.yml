@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: |
           chmod +x gradlew
-          ./gradlew :TMessagesProj_AppStandalone:assembleDebug --no-daemon --stacktrace
+          ./gradlew :TMessagesProj_AppStandalone:assembleAfatStandalone --no-daemon --stacktrace
 
       - uses: actions/upload-artifact@v4
         with:
